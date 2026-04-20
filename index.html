@@ -12,7 +12,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1011/1011504.png">
-    <link rel="manifest" href="/CataWikiCalculator/manifest.json">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body class="bg-gray-50 min-h-screen p-4 font-sans">
 
@@ -95,13 +95,11 @@
             document.getElementById('resTotal').innerText = sym + total.toFixed(2);
             document.getElementById('results').classList.remove('hidden');
         }
-    </script>
-    <script>
-          if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./sw.js') // The dot is crucial
-              .then(reg => console.log('Successfully registered!', reg))
-              .catch(err => console.log('Failed to register:', err));
-          }
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+              .then(reg => console.log('Registered!', reg))
+              .catch(err => console.log('Error:', err));
+        }
     </script>
 </body>
 </html>

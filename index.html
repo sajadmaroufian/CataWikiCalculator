@@ -97,9 +97,11 @@
         }
     </script>
     <script>
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/CataWikiCalculator/sw.js');
-            }
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js') // The dot is crucial
+              .then(reg => console.log('Successfully registered!', reg))
+              .catch(err => console.log('Failed to register:', err));
+          }
     </script>
 </body>
 </html>

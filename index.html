@@ -95,11 +95,13 @@
             document.getElementById('resTotal').innerText = sym + total.toFixed(2);
             document.getElementById('results').classList.remove('hidden');
         }
-        if ('serviceWorker' in navigator) {
+    </script>
+    <script>
+          if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./sw.js')
               .then(reg => console.log('Registered!', reg))
               .catch(err => console.log('Error:', err));
-        }
+          }
     </script>
 </body>
 </html>

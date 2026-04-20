@@ -1,7 +1,13 @@
 {
   "short_name": "Catawiki",
   "name": "Catawiki Watch Calculator",
+  "description": "Calculates fees and taxes for Catawiki auctions",
   "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1011/1011504.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
     {
       "src": "https://cdn-icons-png.flaticon.com/512/1011/1011504.png",
       "sizes": "512x512",

@@ -1,7 +1,7 @@
 {
   "short_name": "Catawiki",
   "name": "Catawiki Watch Calculator",
-  "description": "Calculates fees and taxes for Catawiki auctions",
+  "description": "Calculate auction fees and import taxes",
   "icons": [
     {
       "src": "https://cdn-icons-png.flaticon.com/512/1011/1011504.png",
@@ -15,8 +15,9 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "/CataWikiCalculator/index.html",
   "display": "standalone",
+  "background_color": "#ffffff",
   "theme_color": "#2563eb",
-  "background_color": "#ffffff"
+  "scope": "/CataWikiCalculator/"
 }

@@ -1,3 +1,7 @@
+self.addEventListener('install', (event) => {
+  self.skipWaiting();
+});
+
 self.addEventListener('fetch', (event) => {
-  // This is just a dummy to allow PWA installation
+  // Required for PWA installation
 });
